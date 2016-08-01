@@ -19,4 +19,25 @@ app.get('/sports', (request, response) => {
 	});
 });
 
+app.get('/sports/:name', (request, response) => {
+	let sportName = request.params.name;
+	console.log("Sport name: ", sportName);
+
+	let sport = {
+		"name": "Equestrian",
+		"goldMedals": [
+		{
+			"division": "Individual jumping",
+			"country": "Switzerland",
+			"year": 2020
+		},
+		{
+			"division": "Individual eventing",
+			"country": "Japan",
+			"year": 2020
+		}]
+	};
+	response.json(sport);
+});
+
 app.listen(port, () => console.log(`Server running at http://${host}:${port}/`));
