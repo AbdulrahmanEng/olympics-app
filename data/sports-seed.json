@@ -1,3 +1,42 @@
-{"_id":{"$oid":"579e77c8af1af2966723f620"},"name":"Equestrian"}
-{"_id":{"$oid":"579e7959af1af2966723f621"},"name":"Swimming"}
-{"_id":{"$oid":"579e796eaf1af2966723f622"},"name":"Track \u0026 Field"}
+[{
+		"name": "Equestrian",
+		"goldMedals": [
+		{
+			"division": "Individual jumping",
+			"country": "Switzerland",
+			"year": 2020
+		},
+		{
+			"division": "Individual eventing",
+			"country": "Japan",
+			"year": 2020
+		}]
+},
+{
+		"name": "Swimming",
+		"goldMedals": [
+		{
+			"division": "100m freestyle",
+			"country": "Finland",
+			"year": 2020
+		},
+		{
+			"division": "Women's 800m freestyle",
+			"country": "Australia",
+			"year": 2020
+		}]
+},
+{
+		"name": "Track & Field",
+		"goldMedals": [
+		{
+			"division": "10,000m",
+			"country": "Egypt",
+			"year": 2020
+		},
+		{
+			"division": "100m",
+			"country": "Thailand",
+			"year": 2020
+		}]
+}]
