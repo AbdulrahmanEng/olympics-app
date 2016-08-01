@@ -23,24 +23,8 @@ angular.module('olympics', ['ui.router'])
 		url: '/:sportName',
 		templateUrl: 'sports/sports-medals.html',
 		resolve: {
-			sportService: function($q){
-				return $q((resolve, reject) => {
-					let sport = {
-						"name": "Equestrian",
-						"goldMedals": [
-						{
-							"division": "Individual jumping",
-							"country": "Switzerland",
-							"year": 2020
-						},
-						{
-							"division": "Individual eventing",
-							"country": "Japan",
-							"year": 2020
-						}]
-					};
-					resolve({data: sport});
-				})
+			sportService: function($http, $stateParams){
+				return $http.get(`/sports/${$stateParams.sportName}`);
 			}
 		},
 		controller: function(sportService){
