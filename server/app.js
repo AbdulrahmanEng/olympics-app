@@ -7,8 +7,8 @@ let mongoUtil = require("./mongoUtil");
 
 mongoUtil.connect();
 
-const host = process.env.IP;
-const port = process.env.PORT;
+const host = (process.env.IP || '0.0.0.0');
+const port = (process.env.PORT || 3000);
 
 let app = express();
 
