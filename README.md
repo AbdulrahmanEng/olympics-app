@@ -10,4 +10,4 @@ A MEAN stack application that gives users the ability to post medals. Utilises G
 * Start MongoDB service and Grunt transpiler task.
 * ``npm start`` to start application.
 * Seed MongoDB database: ``mongoimport --db olympics-dev --collection sports --type json --file data/sports-seed.json --jsonArray --drop``.
-* Go to <hostname>:<port>
+* Go http://localhost:3000
